@@ -11,19 +11,19 @@ int p;
 int main()
 {
 
-    while (p != 2)
+    while (p != 2)                               /**делаем цикл с выбором дейсвтий*/
     {
-        cout << "1 = calculator \n 2 - exit \n";
+        cout << "1 = calculator \n 2 - exit \n"; /**запрос от пользователя вход в калькулятор или выход*/
         cin >> p;
         switch (p)
         {
-        case 1:
+        case 1:                                  /**выбор калькулятора*/
         {
-           cout <<"First number ";
+           cout <<"First number ";               /**просим ввести первую цифру*/
             cin >> a;
-            cout << "Action with numbers ";
+            cout << "Action with numbers ";      /**просим ввести операцию*/
             cin >> d;
-            cout << "Second number ";
+            cout << "Second number ";            /**просим ввести вторую цифру*/
             cin >> b;
             if (d == '+')
                 c = a + b;
